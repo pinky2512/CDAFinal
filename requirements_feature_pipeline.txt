@@ -2,3 +2,4 @@ hopsworks
 python-dotenv
 pandas
 mlflow
+confluent-kafka
