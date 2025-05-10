@@ -5,3 +5,4 @@ mlflow
 joblib
 pandas
 scikit-learn
+confluent-kafka
