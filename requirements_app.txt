@@ -1,0 +1,4 @@
+streamlit
+hopsworks
+python-dotenv
+pandas

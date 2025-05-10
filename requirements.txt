@@ -1,0 +1,7 @@
+python-dotenv
+hopsworks
+lightgbm
+mlflow
+joblib
+pandas
+scikit-learn
