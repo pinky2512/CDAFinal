@@ -32,7 +32,7 @@ df_actual["datetime"] = pd.to_datetime(df_actual["datetime"])
 # Setup Streamlit UI
 # ---------------------------
 st.set_page_config(page_title="Predictions vs Ground Truth", layout="wide")
-st.title("📊 Citi Bike: Predictions vs Ground Truth")
+st.title("Citi Bike: Predictions vs Ground Truth")
 
 stations = sorted(df_pred["start_station_name"].unique().tolist())
 selected_station = st.selectbox("Select a Station", stations)
