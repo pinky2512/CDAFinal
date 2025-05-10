@@ -17,13 +17,13 @@ os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("DAGSHUB_TOKEN")
 # UI setup
 # ---------------------------
 st.set_page_config(page_title="Citi Bike Model Monitoring", layout="wide")
-st.title("📊 Citi Bike Model Monitoring Dashboard")
+st.title("Citi Bike Model Monitoring Dashboard")
 
 # ---------------------------
 # MLflow from DagsHub
 # ---------------------------
 try:
-    st.subheader("📈 MAE by Model Version (from MLflow @ DagsHub)")
+    st.subheader("MAE by Model Version (from MLflow @ DagsHub)")
 
     # Connect to MLflow
     mlflow.set_tracking_uri(f"https://dagshub.com/{os.getenv('DAGSHUB_USERNAME')}/{os.getenv('DAGSHUB_REPO')}.mlflow")
@@ -43,4 +43,4 @@ try:
     st.bar_chart(runs.set_index("Version")["MAE"])
 
 except Exception as e:
-    st.error(f"❌ Failed to load MLflow metrics: {e}")
+    st.error(f"Failed to load MLflow metrics: {e}")
